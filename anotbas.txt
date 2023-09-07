@@ -1,0 +1,107 @@
+// Suponha que você tenha um array bidimensional como este:
+const arrayBidimensional = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+// Converter o array em uma string JSON
+const arrayString = JSON.stringify(arrayBidimensional);
+
+// Armazenar a string no localStorage
+localStorage.setItem('meuArray', arrayString);
+
+
+
+--------------------
+
+
+// Recuperar a string do localStorage
+const arrayStringDoLocalStorage = localStorage.getItem('meuArray');
+
+// Converter a string de volta para um array bidimensional
+const arrayBidimensionalRecuperado = JSON.parse(arrayStringDoLocalStorage);
+
+// Agora você pode usar o array bidimensional recuperado
+console.log(arrayBidimensionalRecuperado);
+
+-----------string para numero
+// Armazenando um array de números no Local Storage
+const numeros = [1, 2, 3, 4, 5];
+localStorage.setItem('meuArray', JSON.stringify(numeros));
+
+// Recuperando o array do Local Storage e convertendo de volta para números
+const meuArrayString = localStorage.getItem('meuArray');
+const meuArrayNumeros = JSON.parse(meuArrayString);
+
+console.log(meuArrayNumeros); // Isso imprimirá o array [1, 2, 3, 4, 5] como números
+
+----------------------regras
+Base 16
+2*2*2*2
+4 etapas
+1 win
+
+Entidade:
+
+nome
+etapa atual
+
+definir quem passou controle front
+
+pensar sobre criar novas chaves para cada etapa
+
+----------------------fluxo 
+
+Start da aplicação{
+
+armazena um array bidimensional de 16
+}
+
+Definido 
+
+---------------------gerenciamento das keys
+
+possiblidades
+
+issues:{
+provavelemten os updates seram individuais
+
+talvez exista a necessidade de uma estrutura fixa pre estabelecida {
+	se for o caso é necessario um algoritmo para simular os possiveis locais
+	seria algo semelhante a index de par da proxima cadeia
+talvez crie a necessidade  de ter cada cadeia gerenciada no localhost com cada etapa com sua propria chave onde os elementos sao substituidos de um template criado
+
+
+a susbtituição poderia ser feita elo resultado da divisao de dois considerado o resto do valor
+ex:
+if sobra + 1
+1/2= 0
+2/2 = 1 
+3/2 = 1
+4/2 = 2
+talvez aproximando sempre cima para:ex do caso
+1/2= 1
+2/2 = 1 
+3/2 = 2
+4/2 = 2
+talvez aproximando sempre abaixo para poder seguir o index padrao para:ex do caso
+1/2= 0
+2/2 = 1 
+3/2 = 1
+4/2 = 2
+ao funcionaria. PRovavelmente e melhor aproximar para cima menos 1 para poder lidar com o index
+
+
+}
+}
+
+Elemento armazena 2 e gerencia as regras{
+mais robusto
+possiblidade de elemento pai controlando regras entre cadeias
+}
+Elemento independente updeitado limitado a cada fase
+
+
+
+
