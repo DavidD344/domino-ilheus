@@ -129,7 +129,7 @@ export function ChampProvider({ children }: { children: React.ReactNode }) {
     // --------------------------------
 
     setChampStartList0(tryAllTeams);
-    verifyRefreshKey;
+    verifyRefreshKey();
     return;
   }
 
