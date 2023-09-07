@@ -13,7 +13,7 @@ const ManageChamp = () => {
     resetarScore,
     deleteChamp,
   } = useContext(ChampContext);
-
+  // erro de promise
   if (
     !champStartList0 ||
     !champStartList1 ||
@@ -21,7 +21,8 @@ const ManageChamp = () => {
     !champStartList3 ||
     !champStartList4
   ) {
-    return <h1>Erro de armazenamento</h1>;
+    window.location.reload();
+    return;
   }
   if (champStartList0) {
     return (
