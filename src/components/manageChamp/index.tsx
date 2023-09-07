@@ -21,7 +21,7 @@ const ManageChamp = () => {
     !champStartList3 ||
     !champStartList4
   ) {
-    return;
+    return <h1>Erro de armazenamento</h1>;
   }
   if (champStartList0) {
     return (
