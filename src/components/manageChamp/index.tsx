@@ -84,14 +84,14 @@ const ManageChamp = () => {
               Apaga o registro de pontuação e volta o campeonato para o estado
               inicial
             </p>
-            <div className="h-[1px] bg-th_lblue w-full"></div>
+            <div className="h-[1px] bg-red-600 w-full"></div>
           </div>
           <div className="flex flex-col gap-1 w-fit">
             <h6 className="text-red-600 font-semibold">Deletar Campeonato:</h6>
             <p className="text-th_white">
               Apaga o campeonato inteiro e volta para o registro do campeonato
             </p>
-            <div className="h-[1px] bg-th_lblue w-full"></div>
+            <div className="h-[1px] bg-red-600 w-full"></div>
           </div>
           <div className="flex flex-row  gap-8">
             <button
