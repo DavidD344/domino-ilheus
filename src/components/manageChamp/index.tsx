@@ -21,8 +21,7 @@ const ManageChamp = () => {
     !champStartList3 ||
     !champStartList4
   ) {
-    window.location.reload();
-    return;
+    return <h1>dasda</h1>;
   }
   if (champStartList0) {
     return (
